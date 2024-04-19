@@ -1,0 +1,7 @@
+# variables in Ansible
+- name: variable in ansible
+  hosts: node
+  tasks:
+  - name: vaiables
+    ansible.builtin.debug:
+    msg: "Hello Iam the owner of Relation Hospitals"
