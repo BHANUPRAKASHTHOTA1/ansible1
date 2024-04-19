@@ -1,0 +1,9 @@
+# Remove nginx
+- name: Remove nginx already installed in Node
+  hosts: node
+  become: yes
+  tasks:
+  - name: Remove nginx from node
+    ansible.builtin.yum:
+      name: nginx
+      state: absent
