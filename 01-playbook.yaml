@@ -1,5 +1,8 @@
-- name: pining the node
+#always ansible start with -
+- name: ping the node
   hosts: node
+  # This is the list of tasks/modules/collections
   tasks:
-  - name: pining the server
+  - name: pingining the server
+  # Ansible map
     ansible.builtin.ping:
