@@ -4,4 +4,4 @@
   tasks:
   - name: vaiables
     ansible.builtin.debug:
-    msg: "Hello Iam the owner of Relation Hospitals"
+      msg: "Hello Iam the owner of Relation Hospitals"
