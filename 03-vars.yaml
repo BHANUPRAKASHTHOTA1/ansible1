@@ -1,7 +1,15 @@
 # variables in Ansible
 - name: variable in ansible
   hosts: node
+  vars:
+    TYPE: HOSPITAL
+    HOSPITAL_NAME: RELATIONAL HOSPITAL
+    MOTTO: SERVE FOR THE NATION
   tasks:
   - name: vaiables
     ansible.builtin.debug:
       msg: "Hello Iam the owner of Relation Hospitals"
+
+  - name: variables from the palybook level
+    ansible.builtin.debug:
+      msg: "This is the {{TYPE}}, Name of the Hospital is {{HOSPITAL_NAME}}, The motto of the hospital is {{MOTTO}}"
