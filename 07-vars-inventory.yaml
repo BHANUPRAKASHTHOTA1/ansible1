@@ -1,0 +1,6 @@
+- name: vars from the inventory
+  hosts: node
+  tasks:
+  - name: print the inventory vars
+    ansible.builtin.debug:
+      msg: "type: {{DB_TYPE}},username: {{DB_USRNAME}},catageroy: {{DB_categories}}"

@@ -1,2 +1,7 @@
 [node]
 172.31.80.235
+
+[node:vars]
+DB_TYPE=mongodb
+DB_USRNAME=mongodbadmin
+DB_categories=bakup
