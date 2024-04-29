@@ -1,0 +1,8 @@
+- name: variables from files
+  hosts: localhost
+  vars_file:
+  - variables.yaml
+  tasks:
+  - name: printing variables from file
+    ansbile.builtin.debug:
+      msg: "This is the {{TYPE}}, Name of the Hospital is {{HOSPITAL_NAME}}, The motto of the hospital is {{MOTTO}}" 
