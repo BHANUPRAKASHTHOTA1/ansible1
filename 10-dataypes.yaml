@@ -1,8 +1,8 @@
 - name: Data types
   hosts: localhost
   vars:
-  - NAME: "Bhanu" # String
   - AGE: 25 # Number
+  - NAME: "Bhanu" # String
   - is Doctor: false # Boolean
   - skills: # list
     - Azure
