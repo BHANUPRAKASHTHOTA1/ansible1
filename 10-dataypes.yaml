@@ -16,7 +16,7 @@
   tasks:
   - name: print number datatype
     ansible.builtin.debug:
-      msg: "{{AGE}}""
+      msg: "{{ AGE }}""
   - name: print string datatype
     ansible.builtin.debug:
       msg: "{{NAME}}""
