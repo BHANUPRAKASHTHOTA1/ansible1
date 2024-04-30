@@ -1,0 +1,33 @@
+- name: Data types
+  hosts: localhost
+  vars:
+  - NAME: "Bhanu" # String
+  - AGE: 25 # Number
+  - is Doctor: false # Boolean
+  - skills: # list
+    - Azure
+    - DevOps
+    - AWS
+  - Experience: # MAP
+    - AZURE: 3
+    - DevOps: 4
+    - AWS: 2
+
+  tasks:
+  - name: print number datatype
+    ansible.builtin.debug:
+      msg: {{AGE}}
+  - name: print string datatype
+    ansible.builtin.debug:
+      msg: {{NAME}}
+  - name: print list datatype
+    ansible.builtin.debug:
+      msg: {{skills}}
+  - name: print Boolean datatype
+    ansible.builtin.debug:
+      msg: {{is Doctor}}
+  - name: print map datatype
+    ansible.builtin.debug:
+      msg: {{Experience}}
+
+
