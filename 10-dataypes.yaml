@@ -16,18 +16,18 @@
   tasks:
   - name: print number datatype
     ansible.builtin.debug:
-      msg: {{AGE}}
+      msg: "{{AGE}}""
   - name: print string datatype
     ansible.builtin.debug:
-      msg: {{NAME}}
+      msg: "{{NAME}}""
   - name: print list datatype
     ansible.builtin.debug:
-      msg: {{skills}}
+      msg: "{{skills}}""
   - name: print Boolean datatype
     ansible.builtin.debug:
-      msg: {{is Doctor}}
+      msg: "{{is Doctor}}""
   - name: print map datatype
     ansible.builtin.debug:
-      msg: {{Experience}}
+      msg: "{{Experience}}"
 
 
