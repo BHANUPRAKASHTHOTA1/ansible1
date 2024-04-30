@@ -1,0 +1,25 @@
+- name: vars precedence
+  hosts: node
+  vars:
+    NAME: Bhanu-play
+  vars_files:
+  - variable.yaml
+  vars_prompt:
+    prompt: Please enter the trainer name
+    private: false
+  tasks:
+    - name: variables at task level
+      vars:
+      - NAME: Bhanu-task
+      ansible.builtin.debug:
+        msg: "the name is: {{NAME}}"
+
+# The Precedngs followed by the below.
+
+#1. Command Line
+#2.task level
+#3.vars_files
+#4.prompt
+#5.play
+#6.inventory
+#7.Roles
