@@ -9,9 +9,9 @@
     - DevOps
     - AWS
   - Experience: # MAP
-    - AZURE: 3
-    - DevOps: 4
-    - AWS: 2
+      AZURE: 3
+      DevOps: 4
+      AWS: 2
 
   tasks:
   - name: print number datatype
