@@ -1,7 +1,7 @@
 - name: assigned the user in variable and dynamically check the user
   hosts: localhost
   vars:
-    USER: divya
+    USER: Bhargavi
   tasks:
   - name: print the user if exists if not create
     ansible.builtin.command: id bhanu
@@ -11,11 +11,13 @@
   - name: Check the user
     ansible.builtin.debug:
       msg: "User is:{{USER}}"
-    when: USER=="divya"
+    when: USER=="Bhargavi"
     ignore_errors: True
 
   - name: create the user
     become: yes
     ansible.builtin.user:
-      name: divya
+      name: Bhargavi
     when: output.rc !=0
+     ansible.builtin.debug:
+     msg: "NAME {{name}} is created"
