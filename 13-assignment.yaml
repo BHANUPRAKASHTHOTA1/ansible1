@@ -19,5 +19,5 @@
     ansible.builtin.user:
       name: Divya
     when: output.rc !=0
-    ansible.biltin.debug:
+    ansible.builtin.debug:
       msg: "Name {{USER}} is available"
