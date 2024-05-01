@@ -8,16 +8,15 @@
     register: output
     ignore_errors: True
 
-  - name: Check the user
-    ansible.builtin.debug:
-      msg: "User is:{{USER}}"
-    when: USER=="Divya"
-    ignore_errors: True
+  
 
   - name: create the user
     become: yes
     ansible.builtin.user:
       name: Divya
-    when: output.rc !=0
+  - name: Check the user
     ansible.builtin.debug:
-      msg: "Name {{USER}} is available"
+      msg: "User is:{{USER}}
+    failed_when:
+    - USER=="Divya"
+    - output.rc != 0
