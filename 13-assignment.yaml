@@ -21,7 +21,6 @@
     when: output.rc !=0
 
   - name: Print the user
-    ansible.builtin.command: id Jyothi
-    register: result
-      msg: the user is "{{result}}"
+    ansible.builtin.debug: 
+      msg: "user is available"
     
