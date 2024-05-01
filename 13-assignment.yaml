@@ -22,5 +22,5 @@
 
   - name: Print the user
     ansible.builtin.debug: 
-      msg: "user is available"
+      msg: "output is: {{output}}"
     
