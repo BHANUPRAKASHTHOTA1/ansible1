@@ -22,7 +22,7 @@
 
   - name: Print the user
     ansible.builtin.command: id Jyothi
-    register: output
+    register: result
     ansible.builtin.debug:
-      msg: "the id of {{USER}} is {{output}}"
+      msg: "the id of {{USER}} is {{result}}"
     
