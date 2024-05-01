@@ -19,5 +19,5 @@
     ansible.builtin.user:
       name: Bhargavi
     when: output.rc !=0
-     ansible.builtin.debug:
+    ansible.builtin.debug:
      msg: "NAME {{name}} is created"
