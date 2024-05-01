@@ -17,4 +17,4 @@
   - name: Check the user
     ansible.builtin.debug:
       msg: "User is:{{USER}}"
-    when: NAME==bhanu
+    when: NAME=="bhanu"
