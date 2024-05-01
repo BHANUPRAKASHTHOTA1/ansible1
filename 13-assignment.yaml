@@ -4,7 +4,7 @@
     USER: Bhargavi
   tasks:
   - name: print the user if exists if not create
-    ansible.builtin.command: id bhanu
+    ansible.builtin.command: id Bhargavi
     register: output
     ignore_errors: True
 
@@ -19,4 +19,8 @@
     ansible.builtin.user:
       name: Bhargavi
     when: output.rc !=0
+
+  - name: Print the user
+    ansible.builtin.debug:
+      msg: "ansible.builtin.command: id Bhargavi"
     
