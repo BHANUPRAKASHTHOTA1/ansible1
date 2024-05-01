@@ -22,5 +22,5 @@
 
   - name: Print the user
     ansible.builtin.debug:
-      msg: "ansible.builtin.command: id Bhargavi"
+      msg: "User Bhargavi Created"
     
