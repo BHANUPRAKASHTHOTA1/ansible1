@@ -15,8 +15,6 @@
     ignore_errors: True
 
   - name: create the user
-    ansible.builtin.debug:
-     msg: "NAME {{name}} is created"
     become: yes
     ansible.builtin.user:
       name: Bhargavi
